@@ -1,0 +1,44 @@
+{
+  "tests": [
+    {
+      "name": "Stack test",
+      "setup": "chmod +x setup.sh && ./setup.sh",
+      "run": "make dostack",
+      "input": "",
+      "output": "((.)+(\\n)+)+(\\b2\\n\\+\\n1\\n)?((.)+(\\n))+(\\>( )*)(\\bCOOL program successfully executed)",
+      "comparison": "regex",
+      "timeout": 3,
+      "points": 25
+    },
+    {
+      "name": "Factorial test",
+      "setup": "chmod +x setup.sh && ./setup.sh",
+      "run": "make dofactorial",
+      "input": "",
+      "output": "((.)+(\\n)+)+(\\b2\\n\\+\\n1\\n)?((.)+(\\n))+(\\b3628800\\n)(\\bCOOL program successfully executed)",
+      "comparison": "regex",
+      "timeout": 3,
+      "points": 10
+    },
+    {
+      "name": "Arith test",
+      "setup": "chmod +x setup.sh && ./setup.sh",
+      "run": "make doarith",
+      "input": "",
+      "output": "((.)+(\\n)+)+(\\bnumber 2500 is even!(\\n)+)+((.)+(\\n)+)+(\\bCOOL program successfully executed)",
+      "comparison": "regex",
+      "timeout": 5,
+      "points": 45
+    },
+    {
+      "name": "Testfix",
+      "setup": "chmod +x setup.sh && ./setup.sh",
+      "run": "make dofixtest",
+      "input": "",
+      "output": "((.)+(\\n)+)+((.)+X...X(.)+(\\n)+)+((.)+(\\n)+)+(\\bCOOL program successfully executed)",
+      "comparison": "regex",
+      "timeout": 5,
+      "points": 10
+    }
+  ]
+}
